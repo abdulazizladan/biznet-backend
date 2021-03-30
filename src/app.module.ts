@@ -7,6 +7,10 @@ import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
 import { JobsModule } from './jobs/jobs.module';
 import { ProductsModule } from './products/products.module';
+import { PersonalDataModule } from './personal-data/personal-data.module';
+import { BidModule } from './bid/bid.module';
+import { ArticleModule } from './article/article.module';
+import { BusinessAddressModule } from './business-address/business-address.module';
 
 @Module({
   imports: [
@@ -24,7 +28,11 @@ import { ProductsModule } from './products/products.module';
     AuthModule,
     UsersModule,
     JobsModule,
-    ProductsModule
+    ProductsModule,
+    PersonalDataModule,
+    BidModule,
+    ArticleModule,
+    BusinessAddressModule
   ],
   controllers: [AppController],
   providers: [AppService],
