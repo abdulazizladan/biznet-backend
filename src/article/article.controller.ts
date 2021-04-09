@@ -6,10 +6,12 @@ import { ArticleService } from './article.service';
 @Controller('article')
 export class ArticleController{
 
-    constructor(private articleService: ArticleService)
+    constructor(private articleService: ArticleService){
 
-    @Post()
-    create(@Body()articleEntry: Article): Observable<Article>{
-        return this.articleService.create(article);
     }
+
+    //@Post()
+    //create(@Body()articleEntry: Article): Observable<Article>{
+    //    return this.articleService.create(article);
+    //}
 }
