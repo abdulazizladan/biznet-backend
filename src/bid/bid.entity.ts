@@ -1,21 +1,21 @@
-export class Bid{
-    id: number;
-    job_id: number;
-    user_id: number;
-    quotation: number;
-    comment: string;
+import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
-    constructor(
-        id: number,
-        job_id: number,
-        user_id: number,
-        quotation: number,
-        comment: string
-    ){
-        this.id = id;
-        this.job_id = job_id;
-        this.user_id = user_id;
-        this.quotation = quotation;
-        this.comment = comment;
-    }
+@Entity()
+export class Bid {
+
+    @PrimaryGeneratedColumn()
+    id: number;
+
+    @Column()
+    job_id: number;
+
+    @Column()
+    user_id: number;
+
+    @Column()
+    quotation: number;
+
+    @Column()
+    comment: string;
+    
 }
