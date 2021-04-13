@@ -12,6 +12,7 @@ import { BidModule } from './bid/bid.module';
 import { ArticleModule } from './article/article.module';
 import { BusinessAddressModule } from './business-address/business-address.module';
 import { MessagesModule } from './messages/messages.module';
+import { PersonalAddressModule } from './personal-address/personal-address.module';
 
 @Module({
   imports: [
@@ -34,7 +35,8 @@ import { MessagesModule } from './messages/messages.module';
     BidModule,
     ArticleModule,
     BusinessAddressModule,
-    MessagesModule
+    MessagesModule,
+    PersonalAddressModule
   ],
   controllers: [AppController],
   providers: [AppService],
