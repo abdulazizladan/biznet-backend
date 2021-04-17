@@ -1,6 +1,8 @@
 import { Controller, Get, Post, Body } from '@nestjs/common';
+import { ApiTags } from '@nestjs/swagger';
 import { BusinessesService } from './businesses.service';
 
+@ApiTags('Business')
 @Controller('/businesses')
 export class BusinessesController {
     

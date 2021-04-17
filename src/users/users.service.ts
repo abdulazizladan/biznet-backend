@@ -29,4 +29,8 @@ export class UsersService {
   findById(userId: number){
     return this.users.find(user => user.userId === userId)
   }
+
+  createUser(name: string) {
+    
+  }
 }
