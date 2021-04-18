@@ -2,7 +2,7 @@ import { Controller, Post, Get } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
 import { MessagesService } from './messages.service';
 
-@ApiTags()
+@ApiTags('Messages')
 @Controller('messages')
 export class MessagesController {
 
