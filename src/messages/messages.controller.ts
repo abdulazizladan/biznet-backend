@@ -1,12 +1,12 @@
 import { Controller, Post, Get } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
-import { messagesService } from './messages.service';
+import { MessagesService } from './messages.service';
 
 @ApiTags()
 @Controller('messages')
 export class MessagesController {
 
-    constructor( private messagesService ){
+    constructor( private messagesService: MessagesService ){
 
     }
 
