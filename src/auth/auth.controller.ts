@@ -12,6 +12,6 @@ export class AuthController {
 
     @Post('register')
     register(){
-
+        return "Registerd successfully";
     }
 }
