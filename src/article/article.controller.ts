@@ -1,7 +1,7 @@
-import { Body, Controller, Get, Post } from '@nestjs/common';
+import {  Controller, Get, Post, Put } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
-import { Observable } from 'rxjs';
-import { Article } from './article.model';
+//import { Observable } from 'rxjs';
+//import { Article } from './article.model';
 import { ArticleService } from './article.service';
 
 @ApiTags('Article')
@@ -12,14 +12,24 @@ export class ArticleController{
 
     }
 
+    @Post('create')
+    create(){
+        this.articleService.create();
+    }
+
     @Get()
-    findAll(): string{
-        return "All articles";
+    findAll(){
+        return this.articleService.findAll();
     }
 
     @Get('find')
     find(): string{
         return "finding one"
+    }
+
+    @Put('edit')
+    edit(): string{
+        return "edited"
     }
 
 
