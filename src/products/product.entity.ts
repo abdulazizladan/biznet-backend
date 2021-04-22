@@ -19,5 +19,5 @@ export class Product {
     unit_price: number
 
     @Column()
-    is_abailable: boolean
+    is_available: boolean
 }
