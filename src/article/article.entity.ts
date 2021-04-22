@@ -1,22 +1,20 @@
-//Article entity
-export class Article{
-    id: number;
-    user_id: number;
-    title: string;
-    body: string;
-    timestamp: number;
+import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
-    constructor(
-        id: number,
-        user_id: number,
-        title: string,
-        body: string,
-        timestamp: number
-    ){
-        this.id = id;
-        this.user_id = user_id;
-        this.title = title;
-        this.body = body;
-        this.timestamp = timestamp
-    }
+//Article entity
+@Entity()
+export class Article{
+    @PrimaryGeneratedColumn()
+    id: number;
+
+    @Column()
+    user_id: number;
+
+    @Column()
+    title: string;
+
+    @Column()
+    body: string;
+
+    @Column()
+    timestamp: number;
 }
