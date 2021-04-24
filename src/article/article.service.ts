@@ -25,7 +25,7 @@ export class ArticleService {
     ]
 
     create(){
-
+        return "Created successfully";
     }
 
     findAll(): any{
