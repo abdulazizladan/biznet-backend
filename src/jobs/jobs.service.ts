@@ -7,7 +7,19 @@ export class JobsService{
 
     }
 
-    find(){
+    find(id: number){
+        return id;
+    }
 
+    create() {
+
+    }
+
+    edit(id: number) {
+        return id;
+    }
+
+    remove(id: number) {
+        return id;
     }
 }
