@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Put } from '@nestjs/common';
+import { Controller, Get, Post, Body, Put, Delete } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
 import { JobsService } from './jobs.service';
 
@@ -27,6 +27,11 @@ export class JobsController {
 
     @Put('/:id')
     edit(id: number) {
+
+    }
+
+    @Delete('/id')
+    remove(id: number) {
 
     }
 
