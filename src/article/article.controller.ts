@@ -22,7 +22,7 @@ export class ArticleController{
         return this.articleService.findAll();
     }
 
-    @Get()
+    @Get('/:id')
     findOne(): string{
         return "finding one"
     }
