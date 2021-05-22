@@ -12,27 +12,27 @@ export class JobsController {
 
     @Get()
     findAll() {
-
+        return this.JobsService.findAll();
     }
 
     @Get('/:id')
     findOne( id: number) {
-
+        return this.JobsService.findOne(id);
     }
 
     @Post()
     create() {
-
+        return this.JobsService.create();
     }
 
     @Put('/:id')
     edit(id: number) {
-
+        return this.JobsService.edit(id);
     }
 
     @Delete('/id')
     remove(id: number) {
-
+        return this.JobsService.remove(id);
     }
 
 }
