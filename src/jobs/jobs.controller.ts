@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body } from '@nestjs/common';
+import { Controller, Get, Post, Body, Put } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
 import { JobsService } from './jobs.service';
 
@@ -15,13 +15,18 @@ export class JobsController {
 
     }
 
-    @Get(':id')
+    @Get('/:id')
     findOne( id: number) {
-        
+
     }
 
     @Post()
     create() {
+
+    }
+
+    @Put('/:id')
+    edit(id: number) {
 
     }
 
