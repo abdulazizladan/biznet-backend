@@ -11,12 +11,18 @@ export class JobsController {
     }
 
     @Get()
-    getJobs(){
+    findAll() {
 
     }
 
     @Get(':id')
-    getJobById(){
+    findOne( id: number) {
+        
+    }
+
+    @Post()
+    create() {
 
     }
+
 }
