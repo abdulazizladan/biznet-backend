@@ -9,4 +9,7 @@ export class Role{
 
     @Column()
     can_suspend_users: boolean;
+
+    @Column()
+    can_delete_posts: boolean;
 }
