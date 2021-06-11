@@ -1,4 +1,4 @@
-import {  Controller, Get, Post, Put } from '@nestjs/common';
+import {  Controller, Delete, Get, Post, Put } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
 //import { Observable } from 'rxjs';
 //import { Article } from './article.model';
@@ -8,7 +8,7 @@ import { ArticleService } from './article.service';
 @Controller('article')
 export class ArticleController{
 
-    constructor(private articleService: ArticleService){
+    constructor( private articleService: ArticleService ){
 
     }
 
@@ -22,14 +22,19 @@ export class ArticleController{
         return this.articleService.findAll();
     }
 
-    @Get('find')
-    find(): string{
+    @Get('/:id')
+    findOne(): string{
         return "finding one"
     }
 
     @Put('edit')
     edit(): string{
         return "edited"
+    }
+
+    @Delete()
+    remove() {
+        return 'deleted';
     }
 
 

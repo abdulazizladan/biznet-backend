@@ -4,10 +4,22 @@ import { Injectable } from '@nestjs/common';
 export class JobsService{
 
     findAll(){
-
+        return 'all jobs'
     }
 
-    find(){
+    findOne(id: number){
+        return id;
+    }
 
+    create() {
+        return 'created successfully';
+    }
+
+    edit(id: number) {
+        return id;
+    }
+
+    remove(id: number) {
+        return id;
     }
 }

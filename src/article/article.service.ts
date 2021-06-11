@@ -24,7 +24,7 @@ export class ArticleService {
         }
     ]
 
-    create(){
+    create() {
         return "Created successfully";
     }
 
@@ -32,12 +32,16 @@ export class ArticleService {
         return this.articles;
     }
 
-    findById(): any{
+    findOne(): any{
         
     }
 
-    delete(): any{
+    remove(): any{
         
+    }
+
+    edit() {
+
     }
 
     
