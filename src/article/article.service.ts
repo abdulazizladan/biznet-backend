@@ -5,10 +5,16 @@ import { Article } from './article.model';
 @Injectable()
 export class ArticleService {
 
+    /**
+     * Constructor
+     */
     constructor(){
 
     }
 
+    /**
+     * Article fake data
+     */
     private articles: any = [
         {
             id: 0,
@@ -24,23 +30,44 @@ export class ArticleService {
         }
     ]
 
+    /**
+     * 
+     * @returns 
+     */
     create() {
         return "Created successfully";
     }
 
+    /**
+     * 
+     * @returns 
+     */
     findAll(): any{
         return this.articles;
     }
 
-    findOne(): any{
+    /**
+     * 
+     * @param id 
+     */
+    findOne( id: number): any{
         
     }
 
-    remove(): any{
+    /**
+     * 
+     * @param id 
+     */
+    remove( id: number ): any{
         
     }
 
-    edit() {
+    /**
+     * 
+     * @param id 
+     * @param article 
+     */
+    update( id: number, article: Article) {
 
     }
 

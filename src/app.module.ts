@@ -19,8 +19,8 @@ import { PersonalAddressModule } from './personal-address/personal-address.modul
     BusinessesModule,
     TypeOrmModule.forRoot({
       type : 'mysql',
-      host: '34.121.71.70',
-      //host: 'localhost',
+      //host: '34.121.71.70',
+      host: 'localhost',
       //host : 'biznet-540c7:us-central1:biznet-db',
       port : 3306,
       username : 'biznet_user',
